@@ -58,6 +58,7 @@ Click *Next* at the bottom
  - Network: cpn-colab
  - Datastore: hx-datastore 2
  - Template: ccp-tenant-image-1.12.3-ubuntu18-3.1.0
+
 Leave everything else the same and click next at the bottom
  - master: increase the vcpu’s the 4 and the memory to 32gb
  - worker: increase the vcpu’s the 4 and the memory to 32gb
