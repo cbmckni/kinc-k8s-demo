@@ -101,6 +101,7 @@ Update Helm's repositories(similar to `apt-get update)`:
 Next, install a NFS provisioner onto the K8s cluster to permit dynamic provisoning for 10Gb of persistent data:
 
 `helm install kf stable/nfs-server-provisioner \`
+
 `--set=persistence.enabled=true,persistence.storageClass=standard,persistence.size=10Gi`
 
 Check that the `nfs` storage class exists:
