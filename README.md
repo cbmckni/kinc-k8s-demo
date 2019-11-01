@@ -29,8 +29,52 @@ An additional requirement is access to the CCP environment where the K8s cluster
 
 **If you do not have your CCP login credentials and access to your personal VM, please let us know.**
 
+#### Access VM
+
+First, download and install VNC Viewer: [link](https://www.realvnc.com/en/connect/download/viewer/)
+
+Open the application, then enter your assigned IP in the address bar at the top. 
+
+Enter your assigned **VNC** password when prompted.
+
+You should now have access to your own personal VM!
+
 ## 1. Deploy Kubernertes Cluster Using Cisco Container Platform
 
+Open Firefox and click the Cisco Container Platform link at the top of the browser.
+
+Login with your **CCP** username and password.
+
+#### Create a K8s Cluster
+
+Click *New Cluster*.
+
+Input the following for the dialog boxes:
+ - Infrastructure provider: vpshere
+ - Cluster name: same as username you logged in with
+Click *Next* at the bottom
+ - Data-center: csn-hx
+ - Cluster: cns-hx-c220
+ - Network: cpn-colab
+ - Datastore: hx-datastore 2
+ - Template: ccp-tenant-image-1.12.3-ubuntu18-3.1.0
+Leave everything else the same and click next at the bottom
+ - master: increase the vcpu’s the 4 and the memory to 32gb
+ - worker: increase the vcpu’s the 4 and the memory to 32gb
+ - vm username: same as username you logged in with
+ - ssh public key: go to desktop on the virtual machine and open a file called ssh
+key, copy and paste this into the dialog box
+ - load balancer ip’s- increase to 2
+ - subnet: cpn-sjc-colab-subnet
+Leave everything else the same and click next twice
+
+Look over the summary of settings and click finish to initialize creating the cluster(this
+will take a few minutes)
+
+Once cluster is created, click the arrow under the actions column for your respective
+cluster and click download kubeconfig
+
+You now have access to your own personal K8s cluster!
 
 ## 2. Create Persistant Data Storage to Host Workflow Data
 
