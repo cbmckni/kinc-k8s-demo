@@ -52,6 +52,7 @@ Click *New Cluster*.
 Input the following for the dialog boxes:
  - Infrastructure provider: vpshere
  - Cluster name: same as username you logged in with
+
 Click *Next* at the bottom
  - Data-center: csn-hx
  - Cluster: cns-hx-c220
