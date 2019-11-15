@@ -58,14 +58,12 @@ Click *Next* at the bottom
  - Cluster: cns-hx-c220
  - Network: cpn-colab
  - Datastore: hx-datastore 2
- - Template: ccp-tenant-image-1.12.3-ubuntu18-3.1.0
+ - Template: ccp-tenant-image-1.14.6-ubuntu18-5.0.0
 
 Leave everything else the same and click next at the bottom
  - master: increase the vcpu’s the 4 and the memory to 32gb
- - worker: increase the vcpu’s the 4 and the memory to 32gb
+ - worker: increase the nodes to 3, vcpu’s the 4, and the memory to 32gb
  - vm username: same as username you logged in with
- - ssh public key: go to desktop on the virtual machine and open a file called ssh
-key, copy and paste this into the dialog box
  - load balancer ip’s- increase to 2
  - subnet: cpn-sjc-colab-subnet
 Leave everything else the same and click next twice
@@ -84,7 +82,7 @@ Now that you have a K8s cluster, it is time to access it from the VM.
 
 First, tell the VM where to look for the Kubernetes configurtion file:
 
-`export KUBECONFIG=~/Downloads/kubeconfig.yaml`
+`echo 'export KUBECONFIG=~/Downloads/kubeconfig.yaml' >> ~/.bashrc && source ~/.bashrc`
 
 Test your connection with:
 
