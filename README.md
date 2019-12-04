@@ -39,6 +39,10 @@ Enter your assigned **VNC** password when prompted.
 
 You should now have access to your own personal VM!
 
+Go to https://github.com/cbmckni/techex-demo and clone the repo to your VM's desktop:
+
+`cd ~/Desktop && git clone https://github.com/cbmckni/techex-demo.git`
+
 ## 1. Deploy Kubernertes Cluster Using Cisco Container Platform
 
 Open Firefox and click the Cisco Container Platform link at the top of the browser.
@@ -50,7 +54,7 @@ Login with your **CCP** username and password.
 Click *New Cluster*.
 
 Input the following for the dialog boxes:
- - Infrastructure provider: vpshere
+ - Infrastructure provider: vsphere
  - Cluster name: same as username you logged in with
 
 Click *Next* at the bottom
@@ -124,7 +128,7 @@ Finally, login to the PVC to get a shell, enabling you to view and manage files:
 
 **In a new terminal window....**
 
-Go to the `techex-demo` folder:
+Go to the **techex-demo** folder:
 
 `cd ~/Desktop/techex-demo`
 
