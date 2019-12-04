@@ -45,11 +45,35 @@ Go to https://github.com/cbmckni/techex-demo and clone the repo to your VM's des
 
 ## 1. Deploy Kubernertes Cluster Using Cisco Container Platform
 
+There are two ways to use CCP: the web GUI and command line interface.
+
+For this workshop, we will use the CLI. Instructions for using the web interface are below. 
+
+#### Create a K8s Cluster Using the CCP Command Line Interface
+
+There should be an open terminal on the VM that is already running the CCP CLI environment.
+
+We will create a Kubernetes cluster with 1 master node and 3 workers. Give the cluster the same name as your CCP username, or *workshopX*
+
+To create the cluster, run:
+
+`ccp create cluster -name <CCP_Username> -master 1 -m-mem 32768 -worker 3 -w-mem 32768 -vcpu 4 -load 2`
+
+The command should run until your cluster has been created.
+
+Next, run `ccp cluster list` to list the clusters, find your cluster and copy the UUID.
+
+To download the kubeconfig for your cluster, run:
+
+`ccp create kubeconfig -uuid <UUID> -file kubeconfig.yaml`
+
+Finally, move the kubeconfig to your Downloads folder: `mv kubeconfig.yaml ~/Downloads`
+
+#### [ALTERNATIVE] Create a K8s Cluster Using the CCP Web Interface
+
 Open Firefox and click the Cisco Container Platform link at the top of the browser.
 
 Login with your **CCP** username and password.
-
-#### Create a K8s Cluster
 
 Click *New Cluster*.
 
