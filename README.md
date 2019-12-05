@@ -108,7 +108,7 @@ You now have access to your own personal K8s cluster!
 
 Now that you have a K8s cluster, it is time to access it from the VM.
 
-First, tell the VM where to look for the Kubernetes configurtion file:
+First, tell the VM where to look for the Kubernetes configuration file:
 
 `echo 'export KUBECONFIG=~/Downloads/kubeconfig.yaml' >> ~/.bashrc && source ~/.bashrc`
 
@@ -148,7 +148,25 @@ Finally, login to the PVC to get a shell, enabling you to view and manage files:
 
 **Open a new terminal window.**
 
-## 3. Deploy Genomic Workflow to Your Cloud
+## 3. Get Access to Grafana Visualization Interface
+
+Get username and password to access Grafana via the following commands using kubectl.
+
+Get username: 
+`export GRAFANA_USER=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-user}' | base64 --decode)`
+Get password: 
+`export GRAFANA_PASSWORD=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-password}' | base64 --decode)`
+Print username: 
+`echo $GRAFANA_USER`
+Print password:
+`echo $GRAFANA_PASSWORD`
+ 
+ - Go to firefox and click on the CCP link at the top of the browser, login with access credentials given.
+ - At the top of the GUI where it says version 3, click the box and select version 2.
+ - For your respective cluster, go to the actions column, click on the appearing arrow, and click Grafana.
+ - Copy and paste the username and password from the echo commands above.
+
+## 3. Deploy a Genomic Workflow to Your Cloud
 
 **In a new terminal window....**
 
