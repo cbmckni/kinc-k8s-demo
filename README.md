@@ -153,9 +153,11 @@ Finally, login to the PVC to get a shell, enabling you to view and manage files:
 Get username and password to access Grafana via the following commands using kubectl.
 
 Get username: 
+
 `export GRAFANA_USER=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-user}' | base64 --decode)`
 
 Get password: 
+
 `export GRAFANA_PASSWORD=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-password}' | base64 --decode)`
 
 Print username: 
