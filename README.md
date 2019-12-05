@@ -154,10 +154,13 @@ Get username and password to access Grafana via the following commands using kub
 
 Get username: 
 `export GRAFANA_USER=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-user}' | base64 --decode)`
+
 Get password: 
 `export GRAFANA_PASSWORD=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-password}' | base64 --decode)`
+
 Print username: 
 `echo $GRAFANA_USER`
+
 Print password:
 `echo $GRAFANA_PASSWORD`
  
@@ -166,7 +169,7 @@ Print password:
  - For your respective cluster, go to the actions column, click on the appearing arrow, and click Grafana.
  - Copy and paste the username and password from the echo commands above.
 
-## 3. Deploy a Genomic Workflow to Your Cloud
+## 4. Deploy a Genomic Workflow to Your Cloud
 
 **In a new terminal window....**
 
@@ -191,7 +194,7 @@ Deploy KINC using `nextflow-kuberun`:
 
 **The workflow should take about 10-15 minutes to execute.**
 
-#### 4. Retreive and Visualize Gene Co-expression Network
+#### 5. Retreive and Visualize Gene Co-expression Network
 
 Copy the output of KINC from the PVC to your VM:
 
