@@ -154,15 +154,15 @@ Get username and password to access Grafana via the following commands using kub
 
 Get username: 
 
-`export GRAFANA_USER=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-user}' \
+`export GRAFANA_USER=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-user}' \`
 
-| base64 --decode)`
+`| base64 --decode)`
 
 Get password: 
 
-`export GRAFANA_PASSWORD=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-password}' \
+`export GRAFANA_PASSWORD=$(kubectl get secret ccp-monitor-grafana -n ccp -o=jsonpath='{.data.admin-password}' \`
 
-| base64 --decode)`
+`| base64 --decode)`
 
 Print username: 
 `echo $GRAFANA_USER`
