@@ -57,7 +57,7 @@ There should be an open terminal on the VM that is already running the CCP CLI e
 
 `cd Desktop/ccp_cli`
 
-`Source venv/bin/activate`
+`source venv/bin/activate`
 
 
 
