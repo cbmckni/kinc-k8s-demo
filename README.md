@@ -29,7 +29,7 @@ An additional requirement is access to the CCP environment where the K8s cluster
 
 **If you do not have your CCP login credentials and access to your personal VM, please let us know.**
 
-#### Access VM
+### Access VM
 
 First, download and install VNC Viewer: [link](https://www.realvnc.com/en/connect/download/viewer/)
 
@@ -49,7 +49,7 @@ There are two ways to use CCP: the web GUI and command line interface.
 
 For this workshop, we will use the CLI. Instructions for using the web interface are below. 
 
-#### Create a K8s Cluster Using the CCP Command Line Interface
+### Create a K8s Cluster Using the CCP Command Line Interface
 
 There should be an open terminal on the VM that is already running the CCP CLI environment.
 
@@ -77,7 +77,7 @@ To download the kubeconfig for your cluster, run:
 
 Finally, move the kubeconfig to your Downloads folder: `mv kubeconfig.yaml ~/Downloads`
 
-#### [ALTERNATIVE] Create a K8s Cluster Using the CCP Web Interface
+### [ALTERNATIVE] Create a K8s Cluster Using the CCP Web Interface
 
 Open Firefox and click the Cisco Container Platform link at the top of the browser.
 
@@ -208,7 +208,7 @@ Deploy KINC using `nextflow-kuberun`:
 
 **The workflow should take about 10-15 minutes to execute.**
 
-#### 5. Retreive and Visualize Gene Co-expression Network
+### 5. Retreive and Visualize Gene Co-expression Network
 
 Copy the output of KINC from the PVC to your VM:
 
