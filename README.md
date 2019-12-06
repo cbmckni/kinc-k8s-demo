@@ -53,6 +53,14 @@ For this workshop, we will use the CLI. Instructions for using the web interface
 
 There should be an open terminal on the VM that is already running the CCP CLI environment.
 
+**If there is not a CCP CLI terminal open, or you closed the terminal, run the following in a new terminal:**
+
+`cd Desktop/ccp_cli`
+
+`Source venv/bin/activate`
+
+
+
 We will create a Kubernetes cluster with 1 master node and 3 workers. Give the cluster the same name as your CCP username, or *workshopX*
 
 To create the cluster, run:
