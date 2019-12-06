@@ -73,7 +73,7 @@ Next, run `ccp cluster list` to list the clusters, find your cluster and copy th
 
 To download the kubeconfig for your cluster, run:
 
-`ccp create kubeconfig -uuid <UUID> -file kubeconfig.yaml`
+`ccp create kubeconfig -uuid <UUID> -file kubeconfig`
 
 Finally, move the kubeconfig to your Downloads folder: `mv kubeconfig.yaml ~/Downloads`
 
