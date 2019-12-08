@@ -191,7 +191,7 @@ Print password:
 
 Go to the **techex-demo** folder:
 
-`cd ~/Desktop/techex-demo`
+`cd ~/Downloads/techex-demo`
 
 Give Nextflow the necessary permissions to deploy jobs to your K8s cluster:
 
