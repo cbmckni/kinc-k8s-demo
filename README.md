@@ -146,6 +146,10 @@ Check that the `nfs` storage class exists:
 
 Next, deploy a 8Gb Persistant Volume Claim(PVC) to the cluster:
 
+**Make sure you are in ~/Downloads**
+
+`cd ~/Downloads/techex-demo`
+
 `kubectl apply -f task-pv-claim.yaml`
 
 Check that the PVC was deployed successfully:
