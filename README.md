@@ -77,7 +77,9 @@ To download the kubeconfig for your cluster, run:
 
 `ccp create kubeconfig -uuid <UUID> -file kubeconfig`
 
-Finally, move the kubeconfig to your Downloads folder: `mv kubeconfig.yaml ~/Downloads`
+Finally, move the kubeconfig to your Downloads folder: 
+
+`mv kubeconfig.yaml ~/Downloads`
 
 ### [ALTERNATIVE] Create a K8s Cluster Using the CCP Web Interface
 
@@ -220,7 +222,9 @@ Copy the output of KINC from the PVC to your VM:
 
 Open Cytoscape. (Applications -> Other -> Cytoscape)
 
-Go to your desktop and open a file browsing window, navigate to `~/Desktop/techex-demo/output/Yeast`.
+Go to your desktop and open a file browsing window, navigate to the output folder:
+
+`cd ~/Desktop/techex-demo/output/Yeast`
 
 Finally, drag the file `Yeast.coexnet.txt` from the file browser to Cytoscape!
 
