@@ -39,9 +39,6 @@ Enter your assigned **VNC** password when prompted.
 
 You should now have access to your own personal VM!
 
-Go to https://github.com/cbmckni/techex-demo and clone the repo to your VM's desktop:
-
-`cd ~/Desktop && git clone https://github.com/cbmckni/techex-demo.git`
 
 ## 1. Deploy Kubernertes Cluster Using Cisco Container Platform
 
