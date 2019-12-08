@@ -59,13 +59,15 @@ There should be an open terminal on the VM that is already running the CCP CLI e
 
 `source venv/bin/activate`
 
+This will activate the CCP CLI environment.
+
 
 
 We will create a Kubernetes cluster with 1 master node and 3 workers. Give the cluster the same name as your CCP username, or *workshopX*
 
 To create the cluster, run:
 
-`ccp create cluster -name <CCP_Username> -master 1 -m-mem 32768 -worker 3 -w-mem 32768 -vcpu 4 -load 2`
+`ccp create cluster -name <CCP_Username> -master 1 -m-mem 32768 -worker 3 -w-mem 32768 -vcpu 4 -load 1
 
 The command should run until your cluster has been created.
 
