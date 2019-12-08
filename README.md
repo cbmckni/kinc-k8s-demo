@@ -224,9 +224,9 @@ Open Cytoscape. (Applications -> Other -> Cytoscape)
 
 Go to your desktop and open a file browsing window, navigate to the output folder:
 
-`cd ~/Desktop/techex-demo/output/Yeast`
+`cd ~/Downloads/techex-demo/output/Yeast`
 
-Finally, drag the file `Yeast.coexnet.txt` from the file browser to Cytoscape!
+Finally, drag the file `Yeast.coexpnet.txt` from the file browser to Cytoscape!
 
 The network should now be visualized! 
 
