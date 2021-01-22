@@ -1,5 +1,4 @@
-
-Internet2 Tech Exchange 2019: Scaling Genomics Workflows with Kubernetes Hybrid Cloud Solutions
+Scaling Genomics Workflows with Kubernetes Hybrid Cloud Solutions
 ====
 
 Clemson University, Google and Cisco are collaborating to accelerate genomics research with Kubernetes based cloud solutions. The systems genetics lab at Clemson, led by Dr. Alex Feltus (professor in the Clemson Dept. of Genetics & Biochemistry, faculty in the Clemson Center for Human Genetics and Biomedical Data Science & Informatics program, and Internet2 Board of Trustees member) is engaging CU  students with the Google and Cisco teams to deploy a scalable Kubernetes solution to secure and process gigantic DNA data sets in a hybrid cloud environment. A core Feltus lab goal is to identify petascale research computing models that facilitate “normal” research labs (or collaborative group) in the unfolding transition of life science data analysis from the Excel-scale to the exascale. One model consists of mixing commercial cloud (e.g. GCP, CHC) with public compute resources (e.g. distributed research platform like The National Research Platform).
